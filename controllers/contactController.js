@@ -20,6 +20,11 @@ const createContact = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error("All fields are mandatory!");
   }
+  if(name.length > 20 || email.length > 20 || phone.length > 20 ){
+
+    res.status(400);
+    throw new Error("Field lengths cant be longer than 20 character!");
+  }
   if (!req.req_user.user.id) {
     res.status(400);
     throw new Error("User id is missing!");

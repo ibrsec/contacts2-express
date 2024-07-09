@@ -64,7 +64,7 @@ console.log(user);
         process.env.ACCESS_TOKEN_SECRET,
         {expiresIn:"15m"}
     )
-    res.status(200).json({accessToken:token})
+    res.status(200).json({accessToken:token,username:user.username})
   } else {
     res.status(401);
     throw new Error("Email or password is invalid!");

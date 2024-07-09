@@ -5,8 +5,11 @@ const errorHandler = require('./middleware/errorHandler.js');
 const connectDB = require('./config/dbConnection.js');
 const validateToken = require('./middleware/validateTokenHandler.js');
 connectDB();
+const cors = require('cors');
+
 
 const app = express();
+app.use(cors())
 
 app.use(express.json());
 
