@@ -67,7 +67,7 @@
 ## ℹ️ About The Project
 
 <b>ERD:</b>
-[![stock-app-erd](./contactsErd.png)](https://contacts-react-express.vercel.app/)
+[![contacts-app-erd](./contactsErd.png)](https://contacts-react-express.vercel.app/)
 ---
 
 
@@ -146,17 +146,17 @@ npm run start
 
 ```diff
 + contacts2-express  (folder)     
-+     |---src (folder) 
-      |     |---config (folder)       
-      |     |           
-      |     |---controllers (folder) 
-      |     |    
-      |     |---middleware (folder) 
-      |     |          
-      |     |---models (folder)           
-      |     |          
-      |     └---router (folder)  
-      |      
+
+      |---config (folder)       
+      |           
+      |---controllers (folder) 
+      |    
+      |---middleware (folder) 
+      |          
+      |---models (folder)           
+      |          
+      |---router (folder)  
+      |
       |----.env
       |----.gitignore
       |----index.js
